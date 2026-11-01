@@ -1,31 +1,24 @@
-# Gói bổ sung thuyết minh cho SinhVideoNgan 1.13.0
+# SinhVideoNgan 1.13.0 — bản thử nghiệm có thuyết minh
 
-[Tải gói ZIP khoảng 293 KB](https://github.com/trantuananhhn1-pixel/Tuan-anh-0404/raw/refs/heads/codex/voiceover-download/BoSungThuyetMinh_Nho.zip).
+## Tải file EXE đầy đủ
 
-Gói này dùng cùng file `SinhVideoNgan_v1.13.0.exe` gốc mà bạn đã có để tạo một file thử nghiệm mới. File gốc không bị ghi đè; không cần cài Python để ghép file.
+**[Tải SinhVideoNgan_v1.13.0_ThuyetMinh.exe — khoảng 150 MiB](https://github.com/trantuananhhn1-pixel/Tuan-anh-0404/raw/refs/heads/codex/voiceover-download/SinhVideoNgan_v1.13.0_ThuyetMinh.exe)**
 
-1. Tải ZIP, giải nén toàn bộ vào một thư mục.
-2. Chép `SinhVideoNgan_v1.13.0.exe` gốc vào thư mục vừa giải nén.
-3. Mở thư mục đó, bấm thanh địa chỉ, nhập `powershell` rồi nhấn Enter.
-4. Trong PowerShell, chạy:
+Đây là file ứng dụng Windows đầy đủ, tương tự file EXE gốc. Không cần ghép với file cũ, không cần chạy PowerShell hay cài Python.
 
-   ```powershell
-   .\TaoBanThuyetMinh.ps1
-   ```
+1. Bấm liên kết trên để tải file EXE về máy Windows 64-bit.
+2. Mở file `SinhVideoNgan_v1.13.0_ThuyetMinh.exe` vừa tải.
+3. Trong bảng, kéo sang phải tới cột cuối **Lời thuyết minh**, nhập nội dung riêng cho từng dòng; hoặc nhập Excel có cột này.
+4. Chạy tạo video như trước. Giọng nữ tiếng Việt Hoài My cần Internet. Dòng không có lời thuyết minh dùng quy trình tạo video cũ.
 
-5. Khi báo thành công, mở `SinhVideoNgan_v1.13.0_ThuyetMinh_BanThu.exe` vừa tạo.
-6. Trong bảng, kéo sang phải tới cột cuối **Lời thuyết minh**, nhập nội dung riêng cho từng dòng; hoặc nhập Excel mẫu đi kèm. Giọng đọc nữ tiếng Việt Hoài My cần Internet. Dòng trống dùng quy trình tạo video cũ.
+File gốc được giữ riêng. Nhánh `main` không thay đổi. Lời đọc dài hơn video được tăng tốc để giữ nguyên thời lượng; nên nhập lời vừa với video để giữ tốc độ tự nhiên.
 
-Nếu Windows chặn chạy script theo chính sách PowerShell, hãy dừng và gửi lại nguyên thông báo lỗi. Gói không thay đổi chính sách hoặc cấu hình bảo mật của máy.
+Đây là **bản thử nghiệm**: 51 kiểm thử tự động đã qua, nhưng giao diện Windows và giọng đọc trực tuyến thực tế chưa được xác nhận trên Windows. Mã phần bổ sung, công cụ đóng gói và giấy phép có trong [gói mã nguồn bổ sung](https://github.com/trantuananhhn1-pixel/Tuan-anh-0404/raw/refs/heads/codex/voiceover-download/BoSungThuyetMinh_Nho.zip).
 
-Lời đọc dài hơn video được tăng tốc để giữ nguyên thời lượng video. Nên nhập lời vừa với thời lượng để giọng giữ tốc độ tự nhiên.
-
-Đây là **bản thử nghiệm**: 51 kiểm thử tự động đã qua, nhưng giao diện Windows, script PowerShell và giọng đọc trực tuyến thực tế chưa được xác nhận trên Windows. Việc ghép byte đã được kiểm tra độc lập, tạo đúng SHA-256 của bản thử nghiệm.
-
-Trong gói có mã phần bổ sung và nguồn/giấy phép LGPL của phần giao thức tham khảo. File EXE gốc, các phụ thuộc gốc và nhánh `main` không được thay đổi bởi lần cung cấp này.
-
-SHA-256 của `BoSungThuyetMinh_Nho.zip`:
+SHA-256 của file EXE đầy đủ:
 
 ```text
-b408cde9c643843448395090313d29a19e6e787f2fe8ccb13b33561aa53ccd73
+2ffc1cfde456a1d0bb65331b960cc58940544f8b99543a3111428b189c18e138
 ```
+
+File ZIP bổ sung nhỏ được giữ lại để tham khảo; không cần tải hay chạy gói đó khi dùng file EXE đầy đủ ở trên.
